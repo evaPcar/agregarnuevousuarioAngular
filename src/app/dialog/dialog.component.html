@@ -1,0 +1,43 @@
+<h1 mat-dialog-title>Añade un usuario</h1>
+    <div mat-dialog-content>
+        <form class="form" [formGroup]="UsuariosForm" >
+            <mat-form-field appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input formControlName="nombre" matInput>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                  <mat-label>Apellido</mat-label>
+                  <input formControlName="apellido" matInput>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label>Sexo</mat-label>
+                  <mat-select name="sexo" formControlName="sexo">
+                    <mat-option *ngFor="let sexo of ArraySexo" [value]="sexo">
+                      {{sexo}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label>Edad</mat-label>
+                  <input formControlName="edad" matInput type="number">
+                </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>DNI</mat-label>
+                <input formControlName="dni" matInput>
+              </mat-form-field>
+                <mat-form-field class="Fecha" appearance="fill">
+                  <mat-label>Fecha de Nacimiento</mat-label>
+                  <input formControlName="fecha" matInput [matDatepicker]="picker">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label>Color Favorito</mat-label>
+                  <input formControlName="color" matInput>
+                </mat-form-field>
+        </form>
+    </div>
+
+<div mat-dialog-action  [align]="'end'">
+    <button mat-fab class="boton2" mat-raised-button color="primary" (click)="agregarUsuario()" [disabled]="UsuariosForm.invalid">{{actionBtn}}</button>
+</div>

@@ -1,0 +1,35 @@
+body{
+  background: 'primary';
+}
+.boton{
+  margin-left:49%;
+  margin-top: 5%;
+  color:blue;
+}
+
+.container{
+  display:flex;
+  margin-top:-500px;
+  max-width: 2000px;
+}
+
+.tabla{
+  max-width:2000px;
+  min-width: 300px;
+
+}
+
+td, th {
+  width: 12%;
+  text-align: center;
+}
+
+.pointer1{
+  cursor: pointer;
+  color:rgb(254, 19, 117);
+}
+.pointer2{
+  cursor: pointer;
+  color:blue;
+}
+
