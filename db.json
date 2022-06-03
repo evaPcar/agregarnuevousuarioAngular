@@ -1,0 +1,54 @@
+{
+  "UsuariosLista": [
+    {
+      "nombre": "Eva",
+      "apellido": "Pacheco",
+      "sexo": "Otro",
+      "edad": 31,
+      "dni": "78946734P",
+      "fecha": "1991-05-17T22:00:00.000Z",
+      "color": "Amarillo",
+      "id": 2
+    },
+    {
+      "nombre": "Javi",
+      "apellido": "Cegarra",
+      "sexo": "Masculino",
+      "edad": 24,
+      "dni": "89076589P",
+      "fecha": "1988-08-11T22:00:00.000Z",
+      "color": "Azul",
+      "id": 3
+    },
+    {
+      "nombre": "Maria Luisa",
+      "apellido": "Fernandez",
+      "sexo": "Femenino",
+      "edad": 61,
+      "dni": "35612378F",
+      "fecha": "1960-11-23T23:00:00.000Z",
+      "color": "Turquesa",
+      "id": 4
+    },
+    {
+      "nombre": "Diego",
+      "apellido": "Diaz",
+      "sexo": "Masculino",
+      "edad": 40,
+      "dni": "98747867P",
+      "fecha": "1975-12-19T23:00:00.000Z",
+      "color": "Granate",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
